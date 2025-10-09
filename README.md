@@ -15,5 +15,6 @@ Prompt command lines:
 or
 - git commit -a -m "Message"
 - git push
+- git pull -> send all updates from global instance to the local computer
 #### How to update Local computer with Global Instance:
 
