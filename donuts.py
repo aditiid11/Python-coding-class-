@@ -33,8 +33,8 @@ class Donut:
             price=price+2
         elif (flour == 3):
             print("+1 on price ")
-            price=price+4
-            rice=0
+            price=price+1
+            
     
         if (flavor == 1):
             print("+3 on price ")
@@ -44,7 +44,7 @@ class Donut:
             price=price+2
         elif (flavor == 3):
             print("+1 on price ")
-            price=price+4
+            price=price+1
         self.set_price(price)
         print("final price is ",self.get_price())
         
@@ -64,3 +64,5 @@ if __name__ == "__main__":
     d1=Donut(flavor,flour,price)
     d1.ToString()
     d1.caculate_price()
+    
+    
