@@ -55,14 +55,45 @@ class Donut:
         print("This is the flour",self.flour)
         print("This is the price",self.price)
 
+    
+class Store (Donut):
+    def __init__(self, flavor, flour, price,advertisment,payment):
+        self.advertisement=advertisement
+        self.payment=payment
+        Donut.__init__(self, flavor, flour, price)
+    def get_advertisement(self):
+        return self.advertisement
+    def set_advertiment(self,advertisement):
+        self.advertisement=advertisement
+    def get_payment(self):
+        return self.payment
+    def set_payment(self,payment):
+        self.payment=payment
+        
+    def dount_advertisement(self):
+        user_click=(int(input("Did the user click yes or not (1/2)")))
+        if user_click ==1:
+            self.caculate_price()
+        else: print("Please check advertisment!")
+    
 
 if __name__ == "__main__":
-    flavor = str(input("What flavor do you want (Chocolate[1], vanila[2], strawbery[3]):"))
-    flour=str(input("What kind of flour do you want (glutan [1], keto[2],wheat[3])"))
-    price = 0
+    #flavor = str(input("What flavor do you want (Chocolate[1], vanila[2], strawbery[3]):"))
+    #flour=str(input("What kind of flour do you want (glutan [1], keto[2],wheat[3])"))
+    #price = 0
 
-    d1=Donut(flavor,flour,price)
-    d1.ToString()
-    d1.caculate_price()
+    #d1=Donut(flavor,flour,price)
+    #d1.ToString()
+    #d1.caculate_price()
+    flavor=0
+    flour=0
+    price=0
+    advertisement=0
+    payment=0    
+    s1=Store(flavor,flour,price,advertisement,payment)
+    s1.ToString()
+    s1.dount_advertisement()
+    
+    
     
     
