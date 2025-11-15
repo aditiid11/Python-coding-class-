@@ -18,3 +18,10 @@ or
 - git pull -> send all updates from global instance to the local computer
 #### How to update Local computer with Global Instance:
 
+### Other github command lines:
+
+git diff -> compare old code with currrent code/ compare local instace with global instance
+q -> end the code
+this is nice gile 
+git log -> print the id, author, time, day and comment 
+git log -p -> prints all the changes by using colors and + and -

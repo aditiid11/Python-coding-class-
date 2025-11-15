@@ -16,7 +16,6 @@ class Donut:
         return self.price
     def set_price(self,price):
         self.price=price
-    #TODO: function to calculate the price
     def caculate_price(self):
         print("cauclate 1")
         flour= int(self.get_flour())
@@ -85,7 +84,7 @@ if __name__ == "__main__":
     #d1=Donut(flavor,flour,price)
     #d1.ToString()
     #d1.caculate_price()
-    flavor=0
+    flavor=1
     flour=0
     price=0
     advertisement=0
@@ -93,7 +92,9 @@ if __name__ == "__main__":
     s1=Store(flavor,flour,price,advertisement,payment)
     s1.ToString()
     s1.dount_advertisement()
-    
+
+
+print("this is the final adversisment:")
     
     
     
